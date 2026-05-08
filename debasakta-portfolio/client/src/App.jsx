@@ -26,7 +26,7 @@ const App = () => {
 
   useEffect(() => {
     const fetchReviews = async () => {
-      const res = await fetch('http://localhost:5000/api/reviews');
+      const res = await fetch('https://debasakta-portfolio-backend.onrender.com/api/reviews');
       const reviews = await res.json();
       setAllReviews(reviews);
     };
@@ -131,7 +131,7 @@ const App = () => {
  const handleLoginSuccess = async (CredentialResponse) => {
     try {
       // Note: Added 'await' here to ensure stability
-      const response = await fetch('http://localhost:5000/api/auth/google', {
+      const response = await fetch('https://debasakta-portfolio-backend.onrender.com/api/auth/google', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -161,7 +161,7 @@ const App = () => {
     if (!comment.trim()) return alert("Please write a comment first!");
 
     try {
-      const response = await fetch('http://localhost:5000/api/reviews', {
+      const response = await fetch('https://debasakta-portfolio-backend.onrender.com/api/reviews', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
