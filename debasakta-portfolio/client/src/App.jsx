@@ -5,7 +5,7 @@ import { Layout, Code2, Database, Globe, Cloud, Terminal, X, Award, ExternalLink
 } 
 from 'lucide-react';
 import { motion, AnimatePresence, useScroll, useSpring } from 'framer-motion';
-import profileImage from './DP.png';
+import profileImage from './DP.webp';
 
 const App = () => {
   const [selectedSection, setSelectedSection] = useState(null);
